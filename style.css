@@ -1,0 +1,213 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation:slider 40s infinite linear
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: linear-gradient(rgba(161, 62, 241, 0.3),rgba(75, 51, 255, 0)); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo{
+  font-size: 4em;
+  user-select: none;
+}
+.logo .Wellness{
+  color:#7734e7;
+  font-family: 'Dancing Script', cursive;
+}
+.logo .num{
+  color:#faf4fc;
+  font-family: 'Dancing Script', cursive;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.6em;
+  color: #51d6ca;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+.navigation a:hover::after{
+  transform-origin: left;
+  transform:scaleX(1);
+}
+.navigation .btnLogin-popup{
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.6em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+.navigation .btnLogin-popup:hover {
+  background: #fff;
+  color:#162938;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image:url(new3.jpg);
+    color:gold;
+    font-size: 18px;
+}
+.d1{
+    display: flex;
+    justify-content:space-between;
+
+}
+.result{
+    font-size:20px;
+    font-weight: 500px;
+}
+.s1{
+    background-color: #3bd1c7;
+}
+
+  .bmi-meter {
+    width: 300px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    
+  }
+  
+  .meter-bar {
+    height: 100%;
+    background-color: #eee;
+  }
+
+
+.meter-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: transparent;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .meter-labels {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  .meter-labels span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* BMI Category Colors */
+.underweight {
+    background-color: yellow;
+  }
+  
+  .normal {
+    background-color: green;
+  }
+  
+  .overweight {
+    background-color: orange;
+  }
+  
+  .obese {
+    background-color: red;
+  }
+  .result{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+  }
+  header .dropdown {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #51d6ca;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background: transparent;
+  }
+  .wrapper {
+    position: relative;
+    top:50px;
+    width: 1200px;
+    height: 400px;
+    background: transparent ;
+    border: 2px solid rgba(225,225,225,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.size{
+  font-size: 1.2em;
+}
+.calculate{
+  position: relative;
+  top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none;}

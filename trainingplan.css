@@ -1,0 +1,150 @@
+html{
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 30px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation:slider 40s infinite linear
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: linear-gradient(rgba(178, 124, 251, 0.8),rgba(255, 87, 51, 0)); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.logo{
+  font-size: 4em;
+  user-select: none;
+}
+.logo .Wellness{
+  color:#830CC0;
+  font-family: 'Dancing Script', cursive;
+}
+.logo .num{
+  color:#c9c0d5;
+  font-family: 'Dancing Script', cursive;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.6em;
+  color: #16130f;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.navigation a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+.navigation a:hover::after{
+  transform-origin: left;
+  transform:scaleX(1);
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    
+}
+p{
+    font-size: 1.5em;
+}
+
+section{
+    height:500px;
+    scroll-snap-align: start ;
+   
+}
+nav{
+    /*display:none;*/
+    height:30px;
+    
+}
+
+table,tr,td,th{
+    font-size: 1.2em;
+    border: solid;
+    border-radius: 15px;
+    
+}
+table {
+    border-collapse: collapse;
+  }
+
+th, td {
+    padding: 15px;
+    text-align: left;
+  }
+
+tr:hover {background-color: coral;}
+header .dropdown {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background: transparent;
+  }
+  .wrapper {
+    position: relative;
+    top:150px;
+    width: 1200px;
+    height: 3700px;
+    background: transparent ;
+    border: 2px solid rgba(225,225,225,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: none;}

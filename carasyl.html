@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles_carasyl.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="demo.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+   
+ footer{ 
+        justify-content: center;
+        max-width:80%;
+        margin: auto;
+        }
+       p{
+       color:black;
+       font-size: large;
+       }
+        .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    .container {
+        position: relative;
+        text-align: center;
+        color:black;
+        margin-left: 10px;
+      }
+      .mydiv {
+        position: relative;
+        top: 50px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; /* 80% of page height */}
+
+    .item img {
+        transition: transform 0.3s ease;
+      }
+    .item img:hover {
+     transform: scale(1.2);
+     z-index: -1;
+     opacity: 0.2;
+      }
+      .carousel {  
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory; 
+    
+    }  
+   .carousel .item {  
+   flex-shrink: 0;
+   scroll-snap-align: start;
+   }
+   .item {
+  margin-right: 14px; }
+
+
+.item:first-child {
+  margin-left: 14px; 
+}
+
+.item:last-child {
+  margin-right: 14px;
+} 
+    
+</style>
+
+</head>
+<header>
+    <h2 class="logo"><span class="Wellness">Wellness</span><span class="num">360</span></h2>
+        <nav class="navigation">
+            <a href="login_sucessfull.html">Home </a>
+            <a href="carasyl.html">About</a>
+            <div class="dropdown">
+            <div class="dropbtn"><a href="#">Services</a></div>
+                <div class="dropdown-content">
+                    <a href="bmi2.html">Fitness Marker</a>
+                    <a href="imagemaps.html">Workouts</a>
+                    <a href="trainingplan.html">Training Plans</a>
+                </div>
+            </div>    
+            <a href="contact.html">Contact</a>
+        </nav>
+    </nav>
+</header>
+
+<footer>
+   
+    <div class="mydiv">
+    <div class="owl-carousel owl-theme">
+    <div class="container"><a href="https://www.sweat.com/blogs/fitness/how-to-use-gym-equipment"> <div class="item"><img src="https://images.wallpaperscraft.com/image/single/barbell_legs_gym_176264_1680x1050.jpg"></div></a><div class="centered"><p>Equipment for Beginners</p></div></div>
+    <div class="container"><a href="https://www.wired.com/story/how-to-work-out-from-home/" target="_blank"><div class="item"><img src="https://tse4.explicit.bing.net/th?id=OIP.tk0uGiRed62xftJZfPyOlgHaEo&pid=Api&P=0&h=180"></div></a><div class="centered"><p>Centered</p></div></div>
+    <div class="container"><img src="https://images.hdqwalls.com/download/fitness-gym-girl-nb-1680x1050.jpg"></div>
+    <div class="container"><a href="https://www.yanrefitness.com/gym-safety/" target="_blank"> <div class="item"><img src="https://www.wallpaperup.com/uploads/wallpapers/2013/02/28/46128/ad9b3c62d942da38b9d5d7b07d5dbe6c.jpg"></div></a><div class="centered"><p>Gym Safety</p></div></div>
+    <div class="container"><a href="https://www.nccih.nih.gov/health/providers/digest/yoga-for-health-science " target="_blank" > <div class="item"><img src="https://tse1.mm.bing.net/th?id=OIP.Cf56L-g3JAUV5T6huBtTggHaEo&pid=Api&P=0&h=180"></div></a><div class="centered"><p>Yoga and Health</p></div></div>
+    <div class="container"><a href="https://www.health.harvard.edu/healthbeat/10-tips-for-exercising-safely" target="_blank"><div class="item"><img src="https://images.wallpaperscraft.com/image/single/gym_dumbbells_inventory_219519_1680x1050.jpg"></div></a><div class="centered"><p>Safe Exercising</p></div></div>
+    </div>
+    </div>
+    <div class="map">
+        <br><br><br><br>
+        <div class="map-loc">
+            Best Gym in Sarjapur <br><br>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124430.60983380908!2d77.586037604956!3d12.942611115678005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae137800b639cb%3A0xd1a60720558f276b!2sRobusto%20%7C%20Fitness%20Center!5e0!3m2!1sen!2sin!4v1687351250437!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>$('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay : true,
+        autoplaytimeout : 1000,
+        stagePadding :50,
+        navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ],
+      
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })</script>
+</footer>
+</html>

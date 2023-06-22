@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+    <title>Calculate your BMI</title>
+</head>
+<body>
+    <script src="new.js">
+    </script>
+<header>
+    <h2 class="logo"><span class="Wellness">Wellness</span><span class="num">360</span></h2>
+    <nav class="navigation">
+        <a href="login_sucessfull.html">Home </a>
+        <a href="carasyl.html">About</a>
+        <div class="dropdown">
+        <div class="dropbtn"><a href="#">Services</a></div>
+            <div class="dropdown-content">
+                <a href="bmi2.html">Fitness Marker</a>
+                <a href="imagemaps.html">Workouts</a>
+                <a href="#">Training Plans</a>
+            </div>
+        </div>    
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+ <br>
+ <div style="margin-left:100px;" class="wrapper">
+    <div style="margin-left:100px;">
+        <div style="margin-left:100px;">
+<div id="d1">
+<h3>Calculate Your BMI here!</h3>
+<br>
+<table cellspacing="10" cellpadding="15">
+    <tr>
+        <td>
+Enter Your Height : 
+</td>
+<td>
+    <form>
+        <input type="number" id="height1" min="0" step="0.01"> (in feet)</td>
+        </td><td>
+            <input type="number" id="height2" min="0" step="0.01"> (in inches)
+        </td>
+        <td colspan="2">
+            <div id="display">
+            <span id="s1">
+                RESULT <br>
+                <span id="result"></span>
+                <div class="bmi-meter">
+                    <div class="meter-bar"></div>
+                    <div class="meter-indicator" id="indicator"></div>
+                    <div class="meter-labels">
+                      <span style="margin:10px;">Underweight</span>
+                      <span style="margin: 10px;">Normal</span>
+                      <span style="margin:10px;">Overweight</span>
+                      <span style="margin:10px;" >Obese</span><br><br>              
+                    </div>
+                  </div>  
+              </div>
+            </td>
+    </tr>
+    <tr>
+        <td>Enter Your Weight</td>
+        <td><input type="number" id="weight" min="0" step="0.01"> (in kg)</td>
+        <td></td>
+        <td colspan="2">
+            <div id="Result">
+            </div>
+        </td>
+    </tr>
+</table>
+</form>
+<span style="margin-left:50px"><button onclick="calculateBMI()" style="background-color: #3bd1c7; color: white; padding:10px">Calculate BMI</button></span> <br><br>
+
+<span style="margin-left:180px"><i>Healthy BMI ranges from 18.5 Kg/m<Sup>2</Sup> to 25 Kg/m<sup>2</sup></i></td></span><br><br><br>
+</div>
+</div>
+</div>
+<div style="margin-left:120px;" id="exc">
+    <p id="P5"> </p>
+    <p id="P1">
+    </p>
+    <p id="P2">
+    </p>
+    <p id="P3">
+    </p>
+    </div>
+</body>
+</html>
